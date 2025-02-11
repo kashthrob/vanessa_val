@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+
+    <title>You Said Yes! 💖</title>
+    <style>
+        /* General Styles */
+        body {
+            text-align: center;
+            background: #ffe6f0;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        h1 {
+            color: #ff4d79;
+            font-size: 1.8rem;
+            margin-top: 2rem;
+            font-family: "Dancing Script", serif;
+
+        }
+
+        /* Slideshow Styles */
+        .slideshow {
+            width: 90%;
+            max-width: 400px;
+            margin: 2rem auto;
+            position: relative;
+            border: 5px solid #ff4d79;
+            border-radius: 20px;
+        }
+
+        .slide {
+            display: none;
+            animation: fade 1.5s ease-in-out;
+        }
+
+        .slide img {
+            width: 100%;
+            border-radius: 15px;
+            max-height: 400px;
+            object-fit: cover;
+            box-shadow: 0 0 20px rgba(255, 0, 102, 0.3);
+        }
+
+        p{
+            font-weight: 900;
+            font-family: sans-serif;
+            color: #fff;
+        }
+
+        @keyframes fade {
+            from { opacity: 0.5 } 
+            to { opacity: 1 }
+        }
+
+        /* Spotify Player */
+        .spotify-player {
+            margin: 2rem auto;
+            width: 90%;
+            max-width: 400px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body  style="background: url( './images/love-bg/love-7.jpg'); background-color:#777;background-blend-mode:multiply; background-repeat:no-repeat; background-size: cover; background-position: center; width: 100%; height: 100%;">
+    <div class="container" >
+        <h1>🎉 My Sexy Goddess, You Make Me So Happy! 💖</h1>
+
+
+        <div class="slideshow">
+            <div class="slide fade">
+                <img src="./images/slideshow/el-1.jpg" alt="To Bashira">
+            </div>
+            <div class="slide fade">
+
+                <img src="./images/slideshow/el-2.jpg" alt="To Bashira">
+            </div>
+                <div class="slide fade">
+                <img src="./images/slideshow/el-3.jpg" alt="To Bashira">
+            </div>
+                <div class="slide fade">
+                <img src="./images/slideshow/el-4.jpg" alt="To Bashira">
+            </div>
+                <div class="slide fade">
+                <img src="./images/slideshow/el-6.jpg" alt="To Bashira">
+            </div>
+
+          
+        </div> 
+
+        <p>Hehe You for say no 😏</p>
+        <p>Press Play Woman!</p>
+        <p>Every moment with you is special ❤️</p>
+
+
+        <!-- Spotify Music -->
+        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/0tgVpDi06FyKpA1z0VMD4v?utm_source=generator&theme=0"  frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" ></iframe>        
+
+        
+    </div>
+
+    <!-- Slideshow Script -->
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let slides = document.getElementsByClassName("slide");
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            slides[slideIndex-1].style.display = "block";  
+            setTimeout(showSlides, 5000); // Change image every 5 seconds
+        }
+    </script>
+</body>
+</html>
